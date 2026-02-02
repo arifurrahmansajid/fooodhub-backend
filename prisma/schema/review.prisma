@@ -1,0 +1,15 @@
+model Review {
+    id   String    @id @default(uuid())
+    rating    Int
+    comment   String?
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+
+    meal   Meal @relation(fields: [mealId], references: [id])
+    mealId String
+
+    user   User   @relation(fields: [userId], references: [id])
+    userId String
+
+    @@unique([userId, mealId])
+}
