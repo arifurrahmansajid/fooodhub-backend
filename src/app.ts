@@ -12,14 +12,17 @@ import { providerRouter } from "./modules/provider/provider.route";
 import { adminRouter } from "./modules/admin/admin.route";
 import cors from "cors";
 
-const app : Application = express();
+const app: Application = express();
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: [
+      "http://localhost:3000",
+      process.env.FRONTEND_URL as string
+    ].filter(Boolean),
     credentials: true,
   })
-)
+);
 
 app.use(express.json());
 
@@ -48,8 +51,8 @@ app.use('/api/provider', providerRouter)
 // Admin Routes
 app.use('/api/admin', adminRouter)
 
-app.get("/", (req : Request, res : Response) => {
-    res.status(200).send("Hello there!");
+app.get("/", (req: Request, res: Response) => {
+  res.status(200).send("Hello there!");
 })
 
 app.use(errorHandler);
