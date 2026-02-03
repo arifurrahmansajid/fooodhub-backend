@@ -26,6 +26,10 @@ app.use(
 
 app.use(express.json());
 
+app.get('/favicon.ico', (req: Request, res: Response) => {
+  res.status(204).end();
+});
+
 // Auth Routes
 app.use('/api/auth/', authRouter);
 app.all('/api/auth/{*any}', toNodeHandler(auth));
