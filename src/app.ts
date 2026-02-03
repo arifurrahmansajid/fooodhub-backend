@@ -31,8 +31,14 @@ app.get('/favicon.ico', (req: Request, res: Response) => {
 });
 
 // Auth Routes
-app.use('/api/auth/', authRouter);
-app.all('/api/auth/{*any}', toNodeHandler(auth));
+app.use((req, res, next) => {
+  console.log(`Request: ${req.method} ${req.url}`);
+  if (req.url.startsWith('/api/auth')) {
+    return toNodeHandler(auth)(req, res);
+  }
+  next();
+});
+app.use('/api/auth', authRouter);
 
 // Provider-Profile Routes
 app.use('/api/providers', providerProfileRouter)
