@@ -1,8 +1,8 @@
-import { MealWhereInput } from "../../../prisma/generated/prisma/models";
+import { Prisma } from "../../generated/client/client";
 import { prisma } from "../../lib/prisma";
 
-const getAllMeals = async (searchParam : string, categoryId : string, minPrice : number | undefined, maxPrice : number | undefined, page : number, limit : number, skip : number, sortBy : string, sortOrder : string) => {
-    const andConditions : MealWhereInput[] = [];
+const getAllMeals = async (searchParam: string, categoryId: string, minPrice: number | undefined, maxPrice: number | undefined, page: number, limit: number, skip: number, sortBy: string, sortOrder: string) => {
+    const andConditions: Prisma.MealWhereInput[] = [];
 
     if (searchParam) {
         andConditions.push({
@@ -10,13 +10,13 @@ const getAllMeals = async (searchParam : string, categoryId : string, minPrice :
                 {
                     name: {
                         contains: searchParam,
-                        mode : "insensitive"
+                        mode: "insensitive"
                     }
                 },
                 {
                     details: {
-                        contains : searchParam,
-                        mode : "insensitive"
+                        contains: searchParam,
+                        mode: "insensitive"
                     }
                 }
             ]
@@ -38,50 +38,50 @@ const getAllMeals = async (searchParam : string, categoryId : string, minPrice :
     }
 
     andConditions.push({
-        price : {
-            gte : minPrice,
-            lte : maxPrice
+        price: {
+            gte: minPrice,
+            lte: maxPrice
         }
     });
 
 
     const meals = await prisma.meal.findMany({
-        take : limit,
+        take: limit,
         skip,
         where: {
             isAvailable: true,
-            AND : andConditions
+            AND: andConditions
         },
-        orderBy : {
-            [sortBy] : sortOrder
+        orderBy: {
+            [sortBy]: sortOrder
         },
     });
 
     const total = await prisma.meal.count({
-        where : {
-            AND : andConditions
+        where: {
+            AND: andConditions
         }
     });
 
 
     return {
-        data : meals,
-        pagination : {
+        data: meals,
+        pagination: {
             total,
             page,
             limit,
-            totalPages : Math.ceil(total/limit)
+            totalPages: Math.ceil(total / limit)
         }
     };
 }
 
-const getSingleMeal = async (mealId : string) => {
+const getSingleMeal = async (mealId: string) => {
     const result = await prisma.meal.findUniqueOrThrow({
         where: {
-            id : mealId,
+            id: mealId,
         },
         include: {
-            provider : {
+            provider: {
                 select: {
                     shopName: true
                 }
