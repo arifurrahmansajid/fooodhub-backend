@@ -1,0 +1,130 @@
+﻿{
+    "data":  [
+                 {
+                     "id":  "0b22af67-54fc-4147-a8a7-db9a19a66b8a",
+                     "name":  "Tiramisu Cake",
+                     "details":  "Classic Italian coffee-flavored dessert.",
+                     "image_url":  "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80\u0026w=1000\u0026auto=format\u0026fit=crop",
+                     "price":  9,
+                     "isAvailable":  true,
+                     "createdAt":  "2026-02-03T07:11:22.915Z",
+                     "updatedAt":  "2026-02-03T07:11:22.915Z",
+                     "categoryId":  "64e2bc4b-17df-453f-98d5-4e14ca53486f",
+                     "providerId":  "1de1e627-4b03-4d9a-97e4-0cfa383c325b"
+                 },
+                 {
+                     "id":  "a11d8498-f42d-4439-b80c-771a30265e18",
+                     "name":  "Greek Avocado Salad",
+                     "details":  "Mixed greens, feta, olives, and fresh avocado.",
+                     "image_url":  "https://images.unsplash.com/photo-1540420753448-4adc0c2614b7?q=80\u0026w=1000\u0026auto=format\u0026fit=crop",
+                     "price":  10,
+                     "isAvailable":  true,
+                     "createdAt":  "2026-02-03T07:11:22.914Z",
+                     "updatedAt":  "2026-02-03T07:11:22.914Z",
+                     "categoryId":  "f7edb674-3d96-44e5-a1f4-b1a833f099fd",
+                     "providerId":  "1de1e627-4b03-4d9a-97e4-0cfa383c325b"
+                 },
+                 {
+                     "id":  "a9254091-5dbb-4889-a665-d233e0b6b055",
+                     "name":  "Salmon Sashimi Set",
+                     "details":  "Fresh slices of premium Atlantic salmon (8 pieces).",
+                     "image_url":  "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80\u0026w=1000\u0026auto=format\u0026fit=crop",
+                     "price":  22,
+                     "isAvailable":  true,
+                     "createdAt":  "2026-02-03T07:11:22.913Z",
+                     "updatedAt":  "2026-02-03T07:11:22.913Z",
+                     "categoryId":  "5c32aab8-ce05-4863-9d26-3ebad87f4863",
+                     "providerId":  "1de1e627-4b03-4d9a-97e4-0cfa383c325b"
+                 },
+                 {
+                     "id":  "5843c6c3-5891-44cb-8f74-161f455987ab",
+                     "name":  "Margherita Basil Pizza",
+                     "details":  "Fresh basil, tomato sauce, and mozzarella over thin crust.",
+                     "image_url":  "https://images.unsplash.com/photo-1574071318858-1cdb84a00735?q=80\u0026w=1000\u0026auto=format\u0026fit=crop",
+                     "price":  14,
+                     "isAvailable":  true,
+                     "createdAt":  "2026-02-03T07:11:22.911Z",
+                     "updatedAt":  "2026-02-03T07:11:22.911Z",
+                     "categoryId":  "c4b6d13c-6e84-43ac-960a-44cd7091c974",
+                     "providerId":  "1de1e627-4b03-4d9a-97e4-0cfa383c325b"
+                 },
+                 {
+                     "id":  "77c22876-a2f4-46c0-b87e-050c8c5a410f",
+                     "name":  "Spicy Zinger Burger",
+                     "details":  "Crispy chicken breast with spicy mayo and jalapeños.",
+                     "image_url":  "https://images.unsplash.com/photo-1513185158878-8d8c196b8965?q=80\u0026w=1000\u0026auto=format\u0026fit=crop",
+                     "price":  13,
+                     "isAvailable":  true,
+                     "createdAt":  "2026-02-03T07:11:22.910Z",
+                     "updatedAt":  "2026-02-03T07:11:22.910Z",
+                     "categoryId":  "79bdb4f2-1d72-46d5-981b-e232e2cf2a2c",
+                     "providerId":  "1de1e627-4b03-4d9a-97e4-0cfa383c325b"
+                 },
+                 {
+                     "id":  "698cd9cf-d325-4cdb-9946-2893fc9238f7",
+                     "name":  "Chocolate Fudge Brownie",
+                     "details":  "Rich and gooey chocolate brownie served with vanilla ice cream.",
+                     "image_url":  "https://images.unsplash.com/photo-1564355808539-22fda35bed7e?q=80\u0026w=1000\u0026auto=format\u0026fit=crop",
+                     "price":  7,
+                     "isAvailable":  true,
+                     "createdAt":  "2026-02-03T07:11:22.909Z",
+                     "updatedAt":  "2026-02-03T07:11:22.909Z",
+                     "categoryId":  "64e2bc4b-17df-453f-98d5-4e14ca53486f",
+                     "providerId":  "1de1e627-4b03-4d9a-97e4-0cfa383c325b"
+                 },
+                 {
+                     "id":  "40e837e1-ba10-435b-87dd-bef3340e5dbe",
+                     "name":  "Quinoa Salad Bowl",
+                     "details":  "Organic quinoa with roasted vegetables and lemon tahini dressing.",
+                     "image_url":  "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80\u0026w=1000\u0026auto=format\u0026fit=crop",
+                     "price":  11,
+                     "isAvailable":  true,
+                     "createdAt":  "2026-02-03T07:11:22.908Z",
+                     "updatedAt":  "2026-02-03T07:11:22.908Z",
+                     "categoryId":  "f7edb674-3d96-44e5-a1f4-b1a833f099fd",
+                     "providerId":  "1de1e627-4b03-4d9a-97e4-0cfa383c325b"
+                 },
+                 {
+                     "id":  "dda82293-f350-4146-90d8-69a9c39eedcf",
+                     "name":  "Dragon Roll Sushi",
+                     "details":  "Shrimp tempura, eel, avocado, and cucumber with eel sauce.",
+                     "image_url":  "https://images.unsplash.com/photo-1553621042-f6e147245754?q=80\u0026w=1000\u0026auto=format\u0026fit=crop",
+                     "price":  15,
+                     "isAvailable":  true,
+                     "createdAt":  "2026-02-03T07:11:22.906Z",
+                     "updatedAt":  "2026-02-03T07:11:22.906Z",
+                     "categoryId":  "5c32aab8-ce05-4863-9d26-3ebad87f4863",
+                     "providerId":  "1de1e627-4b03-4d9a-97e4-0cfa383c325b"
+                 },
+                 {
+                     "id":  "6c370c9a-8fd1-4c59-ba53-ce034f07a19c",
+                     "name":  "Pepperoni Feast Pizza",
+                     "details":  "Large pizza with spicy pepperoni and double mozzarella.",
+                     "image_url":  "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80\u0026w=1000\u0026auto=format\u0026fit=crop",
+                     "price":  18,
+                     "isAvailable":  true,
+                     "createdAt":  "2026-02-03T07:11:22.904Z",
+                     "updatedAt":  "2026-02-03T07:11:22.904Z",
+                     "categoryId":  "c4b6d13c-6e84-43ac-960a-44cd7091c974",
+                     "providerId":  "1de1e627-4b03-4d9a-97e4-0cfa383c325b"
+                 },
+                 {
+                     "id":  "b35b7944-f3b2-4d41-8448-a3af4c2bab04",
+                     "name":  "Classic Cheese Burger",
+                     "details":  "Juicy beef patty with cheddar cheese, lettuce, and tomato.",
+                     "image_url":  "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80\u0026w=1000\u0026auto=format\u0026fit=crop",
+                     "price":  12,
+                     "isAvailable":  true,
+                     "createdAt":  "2026-02-03T07:11:22.901Z",
+                     "updatedAt":  "2026-02-03T07:11:22.901Z",
+                     "categoryId":  "79bdb4f2-1d72-46d5-981b-e232e2cf2a2c",
+                     "providerId":  "1de1e627-4b03-4d9a-97e4-0cfa383c325b"
+                 }
+             ],
+    "pagination":  {
+                       "total":  10,
+                       "page":  1,
+                       "limit":  10,
+                       "totalPages":  1
+                   }
+}
