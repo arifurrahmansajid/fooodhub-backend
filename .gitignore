@@ -7,3 +7,5 @@ prisma/generated/
 dist/
 build/
 out/
+.vercel
+.env*.local
