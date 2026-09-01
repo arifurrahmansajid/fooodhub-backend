@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tsx watch src/server.ts",
+    "dev": "node init && npx tsx watch src/server.ts",
     "seed": "npx prisma db seed",
     "postinstall": "prisma generate"
   },
@@ -33,6 +33,7 @@
     "cors": "^2.8.6",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
+    "node-fetch": "^3.3.2",
     "pg": "^8.17.2"
   }
 }
